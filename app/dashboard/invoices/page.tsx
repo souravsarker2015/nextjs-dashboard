@@ -14,6 +14,11 @@ import {lusitana} from '@/app/ui/fonts';
 import {InvoicesTableSkeleton} from '@/app/ui/skeletons';
 import {Suspense} from 'react';
 import {fetchInvoicesPages} from '@/app/lib/data'; // fetchInvoicesPages ইমপোর্ট করা হলো
+import {Metadata} from 'next';
+
+export const metadata: Metadata = {
+    title: 'Invoices',
+};
 
 // searchParams prop-এর প্রকারভেদ (type) পরিবর্তন করা হলো
 export default async function Page(props: {
